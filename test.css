@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('images/background12.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+section
+{
+    width: 73%;
+}
+
+section .container
+{
+    margin:0 !important;
+}
+
+section .navbar-container .row
+{
+    width: 100.9vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+}
+
+.nav-container
+{
+    width: 100%;
+    border: 2px solid rgb(211,208,209);
+}
+
+#logo
+{
+    width: 20%;
+    padding: 0px !important;
+}
+
+.header-section span
+{
+    font-size: 65%;
+}
+
+.header-section span img
+{
+    width: 20px;
+    padding-right:3px;
+}
+
+.header-section .seprator::after
+{
+    content: '|';
+    margin:0 15px;
+}
+
+.header-items
+{
+    color: rgb(170, 169, 169);
+}
+
+.navbar-nav li:first-child 
+{
+    flex:0 1 16.5%;
+}
+
+.nav-item
+{
+    background-color: rgb(211,208,209);
+    border: 1px solid rgba(255,255,255,0.35);
+    font-size: 0.7rem;
+}
+
+.navbar-nav  li:not(:first-child)
+{
+    padding:0 10px;
+}
+.navbar-nav
+{
+    width: 100% !important;
+    padding-top: 0.7px;
+}
+
+.search-bar
+{
+    padding-left: 10.6%;
+    background-color: rgb(211,208,209);
+    border: 1px solid rgba(255,255,255,0.35);
+}
+.search-bar input
+{
+    min-width: max-content;
+    width:40%;
+    font-size: 0.7rem;
+    border-radius: 0;
+    padding: 1px 3px; 
+}
+
+.search-bar input::placeholder
+{
+    color: rgb(197, 197, 197);
+}
+
+.search-bar button 
+{
+    background: white;
+    padding: 0 1% !important;
+    font-size: 0.8rem;
+}  
+
+.navbar-nav .nav-item
+{
+    align-items: end;
+}
+
+.list-items  img
+{
+    width: 7.4%;
+}
+
+.list-items span
+{
+    margin:0 7.5% 0 0;
+}
+
+.list-items li
+{
+    color: rgb(120,130,139);
+    font-size: small;
+}
+
+section .row:nth-child(3) ul li:not(:first-child)
+{
+    list-style: circle;
+    font-size:16px;
+}
+
+section .row:nth-child(3) ul li:not(:first-child) a
+{
+    font-size: 13px;
+}
+
+section #whole-width
+{
+    width: 100vw;
+    position: relative;
+    left: -13.5vw;
+    margin:0;
+}
+
+hr
+{
+    margin:2.4% 0;
+    color: rgb(132,130,131);
+}
+
+ul
+{
+    padding: 0;
+}
+
+.home-container div img
+{
+    border: 10px solid white;
+    border-right: none;
+    width:100%;    
+}
+
+p
+{
+    margin: 0;
+}
+
+.dress-category
+{
+    background: linear-gradient(rgb(51,50,49) 35%,rgb(83, 82, 81) );
+    outline: 1px solid rgba(132,130,131,0.5);
+    outline-offset: -18.5px;
+    padding: 4% 4% 4% 4%;
+    border: 10px solid white;
+}
+
+.dress-category label
+{
+    padding-bottom: 27px !important;
+}
+
+.dress-category label, footer
+{
+    color: rgb(132,130,131);
+    padding-left: 4%;
+}
+
+.dress-category header
+{
+    color: rgb(216,214,215);
+    font-size: 210%;
+    font-weight: 200;
+    padding: 3% 0;
+    padding-left: 4%;
+}
+
+.dress-category footer
+{
+    font-size: 80%;
+}
+
+.divider p
+{
+    padding-left: 4%;
+    color: rgb(216,214,215);
+}
+
+.image-content p
+{
+    font-weight: 400;
+}
+
+.image-container{
+    border-right:1px solid ;
+}
+.image-container,.image-container-3
+{
+    background-color: white;
+    max-height: 170px;
+}
+
+.image-container-3 .image-content  p 
+{
+    display: flex;
+    justify-content: start !important;
+    
+}
+.image-container img,.image-container-3 img{
+    /* width: 24.8vw; */
+    overflow: hidden;
+
+}
+.image-content p:first-child
+{
+    padding: 12px 0;
+    line-height: 130%;
+    color: rgb(156,156,156);
+}
+
+.image-content p:nth-child(2)
+{
+    padding-bottom: 10px;
+    color: rgb(202,202,202);
+    font-size: 80%;
+}
+
+.image-content p:last-child
+{
+    padding:0% 0;
+    color: rgb(120,130,139);
+    display: flex;
+    justify-content: end;
+    font-size: 90%;
+}
+
+section .row:nth-child(6)
+{
+    border: 10px solid rgba(0,0,0,0.4);
+}
+
+footer div .seprator::after
+{
+    content: '|';
+    margin: 0 10px;
+}
+footer
+{
+    font-size:80%;
+}
+
+.right-footer input
+{
+    width: 60%;
+    columns: rgb(107,107,107);
+    padding-left: 2%;
+}
+
+.button
+{
+    border-radius: 8px;
+    padding: 0.5% 2% 0.5% 2%;
+    color: rgb(124, 124, 124);
+    background-color: white;
+}
+
+.row>*{
+    padding: 0;
+}
+@media only screen and (max-width:600px) {
+    .header-section span img{
+        display: none;
+    }
+}
+@media only screen and (max-width:360px) {
+    .header-section span{
+        font-size: 7px;
+    }
+    .header-section .seprator{
+        display: none;
+    }
+    .list-items img{
+        display: none;
+    }
+    .list-items li a,span{
+        font-size:3vw !important;
+        padding-right: 7px;
+    }
+}
+@media only screen and (max-width:200px) {
+    
+    
+    .list-items li a,span{
+        font-size:3vw !important;
+        line-height: 0px !important;
+    }
+}
+@media only screen and (max-width:820px  ) and (min-width:520px) {
+   body>*{
+       font-size: 1.6vw !important;
+   }
+   .header-section .seprator::after
+    {
+        content: '|';
+        margin:0 6px;
+    }
+    .list-items li,a{
+        font-size:100% !important;
+    }
+
+ 
+}
+@media only screen and (max-width:520px  )  and (min-width:360px){
+    body>*{
+        font-size: 1.4vw !important;
+    }
+    .header-section .seprator::after
+     {
+         content: '|';
+         margin:0 6px;
+     }
+     .list-items li,a{
+         font-size:92% !important;
+     }
+     .image-container img,.image-container-3 img{
+        width: 25.5vw;
+    }
+    /* .header-section span img{
+        display: none;
+    } */
+    .header-items span{
+        font-size:8px !important;
+    }
+    section .row:nth-child(7) footer
+    {
+        border: 1px solid red;
+         font-size: 7px;
+    }
+
+ } 
+  @media only screen and (max-width:360px  )  and (min-width:200px){
+    body>*{
+        font-size: 1.6vw !important;
+    }
+   .image-container  img
+   {
+        border: 1px solid red;
+        min-height: fit-content;
+   }      
+   .list-items li,a{
+         font-size:92% !important;
+     }
+     
+     .image-container img div,.image-container-3 div{
+        font-size: 6.5px;
+    }
+    section .row:nth-child(7) footer
+    {
+        font-size: 7px;
+    } 
+    .left-footer p{
+        margin: 0 1.4%;
+    }
+    .left-footer div .seprator{
+        display: none;
+        
+    }
+
+  } 
