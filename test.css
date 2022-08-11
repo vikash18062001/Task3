@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* margin-left: auto; */
 }
 
 body{
@@ -9,6 +10,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: 70% 30%;
+    
 }
 
 section
@@ -91,6 +93,7 @@ section .navbar-container .row
     padding-left: 12%;
     background-color: rgb(211,208,209);
     border: 1px solid rgba(255,255,255,0.35);
+    
 }
 .search-bar input
 {
@@ -99,6 +102,7 @@ section .navbar-container .row
     font-size: 0.7rem;
     border-radius: 0;
     padding: 1px 3px; 
+    box-shadow: -1px -1px grey;
 }
 
 .search-bar input::placeholder
@@ -295,6 +299,7 @@ footer
     width: 60%;
     columns: rgb(107,107,107);
     padding-left: 2%;
+    box-shadow: -0.3px -0.3px grey;
 }
 
 .button
@@ -326,14 +331,6 @@ footer
     .list-items li a,span{
         font-size:3vw !important;
         padding-right: 7px;
-    }
-}
-@media only screen and (max-width:200px) {
-    
-    
-    .list-items li a,span{
-        font-size:3vw !important;
-        line-height: 0px !important;
     }
 }
 @media only screen and (max-width:820px  ) and (min-width:520px) {
@@ -378,47 +375,74 @@ footer
     }
 
  } 
-  @media only screen and (max-width:360px)  {
-    body>*{
-        font-size: 1.6vw !important;
+@media only screen and (max-width:360px)  {
+body>*{
+    font-size: 1.6vw !important;
+}
+.image-container  img
+{
+    min-height: fit-content;
+}      
+.list-items li,a{
+        font-size:92% !important;
     }
-   .image-container  img
-   {
-        min-height: fit-content;
-   }      
-   .list-items li,a{
-         font-size:92% !important;
-     }
-     
-     .image-container img div,.image-container-3 div{
-        font-size: 6.5px;
-    }
-    section .row:nth-child(7) footer
-    {
-        font-size: 7px;
-    } 
-    .left-footer p{
-        margin: 0 1.4%;
-    }
-    .left-footer div .seprator{
-        display: none;
-        
-    }
-    section .row:nth-child(6)
-    {
-        border: 1px solid red;
-    }
-    section .row:nth-child(6) .image-container ,.image-container-3
-    {
-        width: 100%;
-        font-size: 2.5vh !important;
-        margin-bottom: 10px !important;
-        min-height: 150px;
+    .list-items li {
+        padding: 0 !important;
+        margin: 0 !important;
     }
     
 
-  } 
-  @media only screen and (max-width:768px){
+section .row:nth-child(7) footer
+{
+    font-size: 7px;
+} 
+.left-footer p{
+    margin: 0 1.4%;
+}
+.left-footer div .seprator{
+    display: none;
+    
+}
+section .row:nth-child(6)
+{
+    border: 1px solid red;
+}
+.home-container{
+    width: 100%;
+}
+section .row:nth-child(6) .image-container ,.image-container-3
+{
+    width: 100%;
+    font-size: 11px !important;
+    margin-bottom: 10px !important;
+    min-height: 150px;
+    
+}
+section .row:nth-child(6) .image-container-3 div
+{
+    font-size: 11px !important;
+}
+section .row:nth-child(5) .home-container{
+    display: block !important;
+    font-size: 200%;
+}
+section .row:nth-child(5) .home-container>div{
+    border-right: 10px solid white;
+}
+section .row:nth-child(5) .home-container div:nth-child(2){
+    border: 1px solid red;
+    outline-offset: -8px;
+}
+section .row:nth-child(5) .home-container > div
+{
+    width: 100%;
+}
+hr{
+    margin:2.4% 4%;
+}
+
+} 
+@media only screen and (max-width:768px){
       .navbar-nav .nav-link{
         justify-content: start !important;
         font-size: 10px !important;
@@ -431,6 +455,30 @@ footer
       .navbar-nav li:first-child{
           padding: 2px 10px;
       }
+      .nav-container{
+          border:none
+      }
 
   }
-  
+@media only screen and (max-width:240px) {
+    section .row:nth-child(7) footer {
+        display: block!important;
+        bottom: 1px solid yellow;
+    }
+    footer{
+        display: block !important;
+    }
+    
+    section .row:nth-child(3) ul {
+        padding:0 !important; 
+        margin: 0 !important;
+        display: block !important; 
+    }
+    section .row:nth-child(3) ul  li{
+    padding:0 !important; 
+    margin: 0 !important;
+    list-style: circle;
+}
+
+}
+
