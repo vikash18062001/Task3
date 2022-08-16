@@ -403,10 +403,7 @@ section .row:nth-child(7) footer
     display: none;
     
 }
-section .row:nth-child(6)
-{
-    border: 1px solid red;
-}
+
 .home-container{
     width: 100%;
 }
@@ -430,7 +427,6 @@ section .row:nth-child(5) .home-container>div{
     border-right: 10px solid white;
 }
 section .row:nth-child(5) .home-container div:nth-child(2){
-    border: 1px solid red;
     outline-offset: -8px;
 }
 section .row:nth-child(5) .home-container > div
