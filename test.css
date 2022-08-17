@@ -46,7 +46,7 @@ section .navbar-container .row
 }
 .header-section span
 {
-    font-size: 65%;
+    font-size: 80%;
 }
 
 .header-section span img
@@ -75,12 +75,12 @@ section .navbar-container .row
 {
     background-color: rgb(211,208,209);
     border: 1px solid rgba(255,255,255,0.35);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .navbar-nav  li:not(:first-child)
 {
-    padding:0 10px;
+    /* padding:0 10px; */
 }
 .navbar-nav
 {
