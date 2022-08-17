@@ -219,7 +219,9 @@ p
     padding-left: 4%;
     color: rgb(216,214,215);
 }
-
+.image-content{
+    width: 100%;
+}
 .image-content p
 {
     font-weight: 400;
