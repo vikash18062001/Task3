@@ -30,10 +30,13 @@
                 <div class="navbar-container">
                     <div class="row ">
                         <div class="col">
-                            <nav class="navbar navbar-expand-md ">
+                            <nav class="navbar navbar-expand-lg ">
                                 <div class="nav-container d-flex">
                                     <!-- <a class="navbar-brand" ></a> -->
-                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation"><span
+                                            class="navbar-toggler-icon"></span></button>
                                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul class="navbar-nav d-flex">
                                             <li class="nav-item "><a class="nav-link d-flex justify-content-end active"
@@ -47,13 +50,14 @@
                                             <li class="nav-item "><a class="nav-link " href="#">Clearance & Special
                                                     Offers</a></li>
                                             <!-- not able to give hash symbols -->
-                                            <form class="d-flex search-bar align-items-center flex-grow-1 ">
-                                                <input class="form-control" type="search"
-                                                    placeholder="Search Keyword/Items &#35;" aria-label="Search">
-                                                <button class="btn  mx-2  " type="submit">Go </button>
-                                            </form>
+                                                    <form class="d-flex search-bar align-items-center  flex-grow-1">
+                                                        <input class="form-control" type="search"
+                                                            placeholder="Search Keyword/Items &#35;" aria-label="Search">
+                                                        <button class="btn  mx-2  " type="submit">Go </button>
+                                                    </form>
                                         </ul>
                                     </div>
+                                </div>
                             </nav>
                         </div>
                     </div>
@@ -72,37 +76,36 @@
                 <hr id="whole-width">
                 <!-- //for images -->
                 <div class="row d-flex">
-                    <div class="home-container d-flex ">
-                        <div class="col-8 d-flex ">
-                            <img src="images/Recipe.jpg" alt="Recipe Images">
-                        </div>
-                        <div class="col-4 dress-category d-flex">
-                            <div class="">
-                                <header>Dress your table</header>
-                                <label>Create a fabulous new look for you next event. Choose from various style and
-                                    ideas.</label>
-                                <div class="divider ">
-                                    <p class="">Contemporary</p>
-                                    <hr>
-                                    <p>Traditional</p>
-                                    <hr>
-                                    <p>Brunch</p>
-                                    <hr>
-                                    <p>Themes</p>
-                                    <hr>
-                                    <p>Buffet</p>
-                                    <hr>
-                                    <p>Wine & Cheese</p>
-                                </div>
-                                <footer class="footer text-decoration-underline pt-4">See More Dress Your Table Ideas
-                                </footer>
+                    <div class="col-md-8   d-flex">
+                        <img src="images/Recipe.jpg" alt="Recipe Images" class="recipe">
+                    </div>
+                    <div class="col-md-4  position-relative d-flex dress-category">
+                        <div class="">
+                            <header>Dress your table</header>
+                            <label>Create a fabulous new look for you next event. Choose from various style and
+                                ideas.</label>
+                            <div class="divider ">
+                                <p class="">Contemporary</p>
+                                <hr>
+                                <p>Traditional</p>
+                                <hr>
+                                <p>Brunch</p>
+                                <hr>
+                                <p>Themes</p>
+                                <hr>
+                                <p>Buffet</p>
+                                <hr>
+                                <p>Wine & Cheese</p>
                             </div>
+                            <footer class="footer text-decoration-underline py-4">See More Dress Your Table Ideas
+                            </footer>
                         </div>
                     </div>
                 </div>
                 <!-- for lower section -->
-                <div class="row d-flex bg-white">
-                    <div class="col-4 position-relative d-flex image-container ">
+                <!-- <div class="container-fluid"> -->
+                <div class="row  bg-white">
+                    <div class="col-md-4 position-relative d-flex image-container ">
                         <img src="images/promo_glass.png" alt="" class="d-flex mt-auto  ">
                         <div class="image-content position-absolute  px-3">
                             <p>You'll love our fine stemware collection</p>
@@ -112,7 +115,7 @@
                         <div class="vr  "></div>
                     </div>
 
-                    <div class="col-4  position-relative d-flex image-container ">
+                    <div class="col-md-4 position-relative d-flex image-container ">
                         <img src="images/promo_plates.png" alt="" class="d-flex mt-auto flex-grow-1">
                         <div class="image-content position-absolute px-3 ">
                             <p>Home accent for the holidays</p>
@@ -121,7 +124,7 @@
                         </div>
                         <div class="vr"></div>
                     </div>
-                    <div class="col-4 position-relative d-flex image-container-3">
+                    <div class="col-md-4 position-relative d-flex image-container-3">
                         <img src="images/promo_album.png" class="d-flex ms-auto">
                         <div class="image-content position-absolute px-3 ">
                             <p class="">Mikasa clearance <br>sale 20% to 80% off</p>
@@ -130,8 +133,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- </div> -->
                 <!-- footer -->
-                <div class="row d-flex">
+                <div class="row ">
                     <footer class=" d-flex">
                         <div class="left-footer ">
                             <div class="footer-elements text-decoration-underline d-flex py-2">
@@ -154,11 +158,8 @@
                         </div>
                     </footer>
                 </div>
-
+            </section>
         </div>
-
-        </section>
-    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

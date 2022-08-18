@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    /* margin-left: auto; */
 }
 
 body{
@@ -12,17 +11,10 @@ body{
     background-position: 70% 30%;
     
 }
-
 section
 {
     width: 73%;
 }
-
-section .container
-{
-    margin:0 !important;
-}
-
 section .navbar-container .row
 {
     width: 100.9vw;
@@ -39,7 +31,6 @@ section .navbar-container .row
 #logo
 {
     width: 20%;
-    padding: 0px !important;
 }
 #checkOut{
     color: rgb(120,130,139);
@@ -78,13 +69,9 @@ section .navbar-container .row
     font-size: 0.8rem;
 }
 
-.navbar-nav  li:not(:first-child)
-{
-    /* padding:0 10px; */
-}
 .navbar-nav
 {
-    width: 100% !important;
+    width: 100%;
     padding-top: 0.7px;
 }
 
@@ -97,14 +84,19 @@ section .navbar-container .row
 }
 .search-bar input
 {
-    min-width: max-content;
+    min-width: fit-content;
     width:40%;
     font-size: 0.7rem;
     border-radius: 0;
     padding: 1px 3px; 
     box-shadow: -1px -1px grey;
 }
-
+.recipe
+{
+    border: 10px solid white;
+    border-right:none;
+    width: 100%;
+}
 .search-bar input::placeholder
 {
     color: rgb(197, 197, 197);
@@ -113,7 +105,7 @@ section .navbar-container .row
 .search-bar button 
 {
     background: white;
-    padding: 0 1% !important;
+    padding: 0 1% ;
     font-size: 0.8rem;
 }  
 
@@ -141,12 +133,12 @@ section .navbar-container .row
 section .row:nth-child(3) ul li:not(:first-child)
 {
     list-style: circle;
-    font-size:16px;
+    font-size:100% ;
 }
 
 section .row:nth-child(3) ul li:not(:first-child) a
 {
-    font-size: 13px;
+    font-size: 82%;
 }
 
 section #whole-width
@@ -159,7 +151,7 @@ section #whole-width
 
 hr
 {
-    margin:2.4% 0;
+    margin:2.4% 8%;
     color: rgb(132,130,131);
 }
 
@@ -167,7 +159,10 @@ ul
 {
     padding: 0;
 }
-
+section .row:nth-child(5)
+{
+    /* border: 10px solid red; */
+}
 .home-container div img
 {
     border: 10px solid white;
@@ -191,13 +186,13 @@ p
 
 .dress-category label
 {
-    padding-bottom: 27px !important;
+    padding-bottom: 27px ;
 }
 
 .dress-category label, footer
 {
     color: rgb(132,130,131);
-    padding-left: 4%;
+    padding-left: 10%;
 }
 
 .dress-category header
@@ -205,8 +200,8 @@ p
     color: rgb(216,214,215);
     font-size: 210%;
     font-weight: 200;
-    padding: 3% 0;
-    padding-left: 4%;
+    padding: 8% 0;
+    padding-left: 10%;
 }
 
 .dress-category footer
@@ -216,7 +211,7 @@ p
 
 .divider p
 {
-    padding-left: 4%;
+    padding-left: 10%;
     color: rgb(216,214,215);
 }
 .image-content{
@@ -232,26 +227,23 @@ p
 }
 .image-container,.image-container-3
 {
-    width: 33.33%;
+    /* width: 100%; */
     background-color: white;
-    max-height: 170px;
+    /* max-height: auto; */
 }
 
 .image-container-3 .image-content  p 
 {
-    display: flex;
     justify-content: start !important;
     
 }
 .stylish-border
 {
-    /* padding: 6px 0; */
     border-right: 1px solid black;
 }
 .image-container img,.image-container-3 img{
     object-fit: cover;
     overflow: hidden;
-
 }
 
 .image-content p:first-child
@@ -315,6 +307,14 @@ footer
 .row>*{
     padding: 0;
 }
+@media only screen and (max-width:576px){
+    .navbar-nav li{
+        display: flex;
+        justify-content: start;
+        padding-left: 5%;
+    }
+}
+/*
 @media only screen and (max-width:600px) {
     .header-section span img{
         display: none;
@@ -365,9 +365,9 @@ footer
      .image-container img,.image-container-3 img{
         width: 25.5vw;
     }
-    /* .header-section span img{
+     .header-section span img{
         display: none;
-    } */
+    } 
     .header-items span{
         font-size:8px !important;
     }
@@ -435,6 +435,7 @@ section .row:nth-child(5) .home-container > div
 {
     width: 100%;
 }
+
 hr{
     margin:2.4% 4%;
 }
@@ -478,5 +479,5 @@ hr{
     list-style: circle;
 }
 
-}
+}*/
 
